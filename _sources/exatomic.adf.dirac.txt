@@ -1,0 +1,15 @@
+exatomic.adf.dirac package
+==========================
+
+.. automodule:: exatomic.adf.dirac
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   exatomic.adf.dirac.dirac
+

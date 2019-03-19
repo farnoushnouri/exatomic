@@ -1,0 +1,17 @@
+exatomic.qchem package
+======================
+
+.. automodule:: exatomic.qchem
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   exatomic.qchem.editor
+   exatomic.qchem.inputs
+   exatomic.qchem.output
+

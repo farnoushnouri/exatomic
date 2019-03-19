@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>exatomic.interfaces.xyz module &mdash; exatomic 0.4.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="exatomic.molcas package" href="exatomic.molcas.html" />
+    <link rel="prev" title="exatomic.interfaces.tens module" href="exatomic.interfaces.tens.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> exatomic
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sitemap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contrib.html">Development</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="exatomic.html">exatomic package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="exatomic.html#supported-software">Supported Software</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="exatomic.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="exatomic.adf.html">exatomic.adf package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.algorithms.html">exatomic.algorithms package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.core.html">exatomic.core package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.gaussian.html">exatomic.gaussian package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="exatomic.interfaces.html">exatomic.interfaces package</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="exatomic.interfaces.html#interfaces">Interfaces</a></li>
+<li class="toctree-l4 current"><a class="reference internal" href="exatomic.interfaces.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.molcas.html">exatomic.molcas package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.nbo.html">exatomic.nbo package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.nwchem.html">exatomic.nwchem package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.qchem.html">exatomic.qchem package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.qe.html">exatomic.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.util.html">exatomic.util package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.widgets.html">exatomic.widgets package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exatomic.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">exatomic</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="exatomic.html">exatomic package</a> &raquo;</li>
+        
+          <li><a href="exatomic.interfaces.html">exatomic.interfaces package</a> &raquo;</li>
+        
+      <li>exatomic.interfaces.xyz module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/exatomic.interfaces.xyz.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-exatomic.interfaces.xyz">
+<span id="exatomic-interfaces-xyz-module"></span><h1>exatomic.interfaces.xyz module<a class="headerlink" href="#module-exatomic.interfaces.xyz" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="xyz-file-editor">
+<h2>XYZ File Editor<a class="headerlink" href="#xyz-file-editor" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="exatomic.interfaces.xyz.Meta">
+<em class="property">class </em><code class="descclassname">exatomic.interfaces.xyz.</code><code class="descname">Meta</code><a class="reference internal" href="_modules/exatomic/interfaces/xyz.html#Meta"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.interfaces.xyz.Meta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">exa.core.container.TypedMeta</span></code></p>
+<dl class="attribute">
+<dt id="exatomic.interfaces.xyz.Meta.atom">
+<code class="descname">atom</code><a class="headerlink" href="#exatomic.interfaces.xyz.Meta.atom" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="exatomic.core.atom.html#exatomic.core.atom.Atom" title="exatomic.core.atom.Atom"><code class="xref py py-class docutils literal notranslate"><span class="pre">exatomic.core.atom.Atom</span></code></a></p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="exatomic.interfaces.xyz.Meta.frame">
+<code class="descname">frame</code><a class="headerlink" href="#exatomic.interfaces.xyz.Meta.frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="exatomic.core.frame.html#exatomic.core.frame.Frame" title="exatomic.core.frame.Frame"><code class="xref py py-class docutils literal notranslate"><span class="pre">exatomic.core.frame.Frame</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="exatomic.interfaces.xyz.XYZ">
+<em class="property">class </em><code class="descclassname">exatomic.interfaces.xyz.</code><code class="descname">XYZ</code><span class="sig-paren">(</span><em>path_stream_or_string</em>, <em>as_interned=False</em>, <em>nprint=30</em>, <em>name=None</em>, <em>description=None</em>, <em>meta=None</em>, <em>encoding=None</em>, <em>ignore=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/interfaces/xyz.html#XYZ"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="exatomic.core.editor.html#exatomic.core.editor.Editor" title="exatomic.core.editor.Editor"><code class="xref py py-class docutils literal notranslate"><span class="pre">exatomic.core.editor.Editor</span></code></a></p>
+<p>An editor for programmatically editing <a class="reference external" href="https://en.wikipedia.org/wiki/XYZ_file_format">xyz</a> files.</p>
+<dl class="method">
+<dt id="exatomic.interfaces.xyz.XYZ.parse_frame">
+<code class="descname">parse_frame</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/interfaces/xyz.html#XYZ.parse_frame"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ.parse_frame" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a minimal <code class="xref py py-class docutils literal notranslate"><span class="pre">Frame</span></code> from the (parsed)
+<a class="reference internal" href="exatomic.core.atom.html#exatomic.core.atom.Atom" title="exatomic.core.atom.Atom"><code class="xref py py-class docutils literal notranslate"><span class="pre">Atom</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="exatomic.interfaces.xyz.XYZ.parse_atom">
+<code class="descname">parse_atom</code><span class="sig-paren">(</span><em>unit='Angstrom'</em>, <em>names=('symbol'</em>, <em>'x'</em>, <em>'y'</em>, <em>'z')</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/interfaces/xyz.html#XYZ.parse_atom"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ.parse_atom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse the atom table from the current xyz file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>unit</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Default xyz unit of length is the Angstrom</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="exatomic.interfaces.xyz.XYZ.write">
+<code class="descname">write</code><span class="sig-paren">(</span><em>path</em>, <em>trajectory=True</em>, <em>float_format='%    .8f'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/interfaces/xyz.html#XYZ.write"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ.write" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write an xyz file (or files) to disk.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Directory or file path</li>
+<li><strong>trajectory</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Write xyz trajectory file (default) or individual</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><em>path (str)</em> – On success, return the directory or file path written</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="exatomic.interfaces.xyz.XYZ.from_universe">
+<em class="property">classmethod </em><code class="descname">from_universe</code><span class="sig-paren">(</span><em>universe</em>, <em>atom_table='atom'</em>, <em>float_format='%    .8f'</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/interfaces/xyz.html#XYZ.from_universe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ.from_universe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create an xyz file editor from a given universe. If the universe has
+more than one frame, creates an xyz trajectory format editor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>universe</strong> – The universe</li>
+<li><strong>atom_table</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – One of ‘atom’, ‘unit’, or ‘visual’ corresponding to coordinates</li>
+<li><strong>float_format</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Floating point format (for writing)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="exatomic.interfaces.xyz.XYZ.atom">
+<code class="descname">atom</code><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ.atom" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="exatomic.interfaces.xyz.XYZ.frame">
+<code class="descname">frame</code><a class="headerlink" href="#exatomic.interfaces.xyz.XYZ.frame" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="exatomic.molcas.html" class="btn btn-neutral float-right" title="exatomic.molcas package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="exatomic.interfaces.tens.html" class="btn btn-neutral float-left" title="exatomic.interfaces.tens module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+      <span class="lastupdated">
+        Last updated on Mar 19, 2019.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

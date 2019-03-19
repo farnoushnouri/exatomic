@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>exatomic.gaussian.inputs module &mdash; exatomic 0.4.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true, "ignoreClass": "document", "processClass": "math|output_area"}})</script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="exatomic.gaussian.output module" href="exatomic.gaussian.output.html" />
+    <link rel="prev" title="exatomic.gaussian.editor module" href="exatomic.gaussian.editor.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> exatomic
+          
+
+          
+            
+            <img src="_static/logo.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.4.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Sitemap</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contrib.html">Development</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="exatomic.html">exatomic package</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="exatomic.html#supported-software">Supported Software</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="exatomic.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="exatomic.adf.html">exatomic.adf package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.algorithms.html">exatomic.algorithms package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.core.html">exatomic.core package</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="exatomic.gaussian.html">exatomic.gaussian package</a><ul class="current">
+<li class="toctree-l4 current"><a class="reference internal" href="exatomic.gaussian.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.interfaces.html">exatomic.interfaces package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.molcas.html">exatomic.molcas package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.nbo.html">exatomic.nbo package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.nwchem.html">exatomic.nwchem package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.qchem.html">exatomic.qchem package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.qe.html">exatomic.qe package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.util.html">exatomic.util package</a></li>
+<li class="toctree-l3"><a class="reference internal" href="exatomic.widgets.html">exatomic.widgets package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="exatomic.html#submodules">Submodules</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">exatomic</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="exatomic.html">exatomic package</a> &raquo;</li>
+        
+          <li><a href="exatomic.gaussian.html">exatomic.gaussian package</a> &raquo;</li>
+        
+      <li>exatomic.gaussian.inputs module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/exatomic.gaussian.inputs.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="module-exatomic.gaussian.inputs">
+<span id="exatomic-gaussian-inputs-module"></span><h1>exatomic.gaussian.inputs module<a class="headerlink" href="#module-exatomic.gaussian.inputs" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="gaussian-input-generator">
+<h2>Gaussian Input Generator<a class="headerlink" href="#gaussian-input-generator" title="Permalink to this headline">¶</a></h2>
+<p>Editor class and helper function for writing input files.</p>
+<dl class="class">
+<dt id="exatomic.gaussian.inputs.Input">
+<em class="property">class </em><code class="descclassname">exatomic.gaussian.inputs.</code><code class="descname">Input</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/gaussian/inputs.html#Input"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.gaussian.inputs.Input" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="exatomic.gaussian.editor.html#exatomic.gaussian.editor.Editor" title="exatomic.gaussian.editor.Editor"><code class="xref py py-class docutils literal notranslate"><span class="pre">exatomic.gaussian.editor.Editor</span></code></a></p>
+<dl class="classmethod">
+<dt id="exatomic.gaussian.inputs.Input.from_universe">
+<em class="property">classmethod </em><code class="descname">from_universe</code><span class="sig-paren">(</span><em>uni</em>, <em>link0=''</em>, <em>route='#P HF/6-31G(d)'</em>, <em>title=''</em>, <em>name=''</em>, <em>charge=0</em>, <em>mult=1</em>, <em>basis=''</em>, <em>ecp=''</em>, <em>options=''</em>, <em>writedir=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/gaussian/inputs.html#Input.from_universe"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.gaussian.inputs.Input.from_universe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate an input Editor from a universe. Arguments can either be strings
+or iterables of key, value pairs (dict, list, tuple) and/or just strings.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="exatomic.gaussian.inputs.tuning_inputs">
+<code class="descclassname">exatomic.gaussian.inputs.</code><code class="descname">tuning_inputs</code><span class="sig-paren">(</span><em>uni</em>, <em>name</em>, <em>mult</em>, <em>charge</em>, <em>basis</em>, <em>gammas</em>, <em>alphas</em>, <em>route=None</em>, <em>link0=None</em>, <em>nproc=4</em>, <em>mem=4</em>, <em>field=None</em>, <em>writedir=None</em>, <em>deep=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/gaussian/inputs.html#tuning_inputs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.gaussian.inputs.tuning_inputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provided a universe, generate input files for functional tuning.
+Includes input keywords for orbital visualization within exatomic.
+Assumes you will copy restart checkpoint files to have the same
+names as the input files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>uni</strong> (<em>exatomic.container.Universe</em>) – molecular specification</li>
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – prefix for job names</li>
+<li><strong>mult</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – spin multiplicity</li>
+<li><strong>charge</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – charge of the system</li>
+<li><strong>basis</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – tuples of atomic symbol, string of basis name</li>
+<li><strong>gammas</strong> (<em>iter</em>) – values of range separation parameter (omega)</li>
+<li><strong>alphas</strong> (<em>iter</em>) – fractions of Hartree-Fock in the short range</li>
+<li><strong>route</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – strings or tuples of keyword, value pairs</li>
+<li><strong>link0</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – strings or tuples of keyword, value pairs</li>
+<li><strong>nproc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – number of processors</li>
+<li><strong>mem</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – memory (in GB)</li>
+<li><strong>writedir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – directory path to write input files</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><em>editors (list)</em> – input files as exa.Editors</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="exatomic.gaussian.inputs.functional_inputs">
+<code class="descclassname">exatomic.gaussian.inputs.</code><code class="descname">functional_inputs</code><span class="sig-paren">(</span><em>uni</em>, <em>name</em>, <em>mult</em>, <em>charge</em>, <em>basis</em>, <em>funcnames={'pbe': 'PBEPBE'}</em>, <em>nproc=4</em>, <em>mem=4</em>, <em>field=None</em>, <em>writedir=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/exatomic/gaussian/inputs.html#functional_inputs"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#exatomic.gaussian.inputs.functional_inputs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provided a universe, generate input files to analyze the
+delocalization error inherent in functionals defined in funcnames.
+Includes input keywords for orbital visualization within exatomic.
+Assumes you will copy restart checkpoint files to have the same
+names as the input files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>uni</strong> (<em>exatomic.container.Universe</em>) – molecular specification</li>
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – prefix for job names</li>
+<li><strong>mult</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – spin multiplicity</li>
+<li><strong>charge</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – charge of the system</li>
+<li><strong>basis</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – tuples of atomic symbol, string of basis name</li>
+<li><strong>gammas</strong> (<em>iter</em>) – values of range separation parameter (omega)</li>
+<li><strong>alphas</strong> (<em>iter</em>) – fractions of Hartree-Fock in the short range</li>
+<li><strong>route</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – strings or tuples of keyword, value pairs</li>
+<li><strong>link0</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – strings or tuples of keyword, value pairs</li>
+<li><strong>nproc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – number of processors</li>
+<li><strong>mem</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – memory (in GB)</li>
+<li><strong>writedir</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – directory path to write input files</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><em>editors (list)</em> – input files as exa.Editors</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="exatomic.gaussian.output.html" class="btn btn-neutral float-right" title="exatomic.gaussian.output module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="exatomic.gaussian.editor.html" class="btn btn-neutral float-left" title="exatomic.gaussian.editor module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 
+      <span class="lastupdated">
+        Last updated on Mar 19, 2019.
+      </span>
+
+    </p>
+  </div> 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

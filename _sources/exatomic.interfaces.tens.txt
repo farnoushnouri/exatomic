@@ -1,0 +1,7 @@
+exatomic.interfaces.tens module
+===============================
+
+.. automodule:: exatomic.interfaces.tens
+    :members:
+    :undoc-members:
+    :show-inheritance:

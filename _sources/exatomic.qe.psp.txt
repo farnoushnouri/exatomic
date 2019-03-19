@@ -1,0 +1,16 @@
+exatomic.qe.psp package
+=======================
+
+.. automodule:: exatomic.qe.psp
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   exatomic.qe.psp.jobfile
+   exatomic.qe.psp.upf
+

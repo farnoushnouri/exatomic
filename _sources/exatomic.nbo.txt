@@ -1,0 +1,17 @@
+exatomic.nbo package
+====================
+
+.. automodule:: exatomic.nbo
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Submodules
+----------
+
+.. toctree::
+
+   exatomic.nbo.editor
+   exatomic.nbo.inputs
+   exatomic.nbo.output
+

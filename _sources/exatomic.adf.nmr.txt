@@ -1,0 +1,8 @@
+exatomic.adf.nmr package
+========================
+
+.. automodule:: exatomic.adf.nmr
+    :members:
+    :undoc-members:
+    :show-inheritance:
+

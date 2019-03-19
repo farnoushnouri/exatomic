@@ -1,0 +1,26 @@
+exatomic.adf package
+====================
+
+.. automodule:: exatomic.adf
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    exatomic.adf.adf
+    exatomic.adf.dirac
+    exatomic.adf.nmr
+
+Submodules
+----------
+
+.. toctree::
+
+   exatomic.adf.editor
+   exatomic.adf.inputs
+   exatomic.adf.output
+

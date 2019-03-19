@@ -1,0 +1,25 @@
+exatomic.qe package
+===================
+
+.. automodule:: exatomic.qe
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+Subpackages
+-----------
+
+.. toctree::
+
+    exatomic.qe.core
+    exatomic.qe.cp
+    exatomic.qe.psp
+    exatomic.qe.pw
+
+Submodules
+----------
+
+.. toctree::
+
+   exatomic.qe.types
+
